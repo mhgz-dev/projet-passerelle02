@@ -6,7 +6,7 @@
 ?>
 
 
-<section class="container">
+<section class="section container">
 <div class="d-flex justify-content-center pt-1">
     <?php if(isset($_GET['success'])) {
         echo '<p class="alert alert-success">'.htmlspecialchars($_GET['message']).'</p>';

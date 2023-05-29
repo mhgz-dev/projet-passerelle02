@@ -5,7 +5,7 @@
     ob_start();
 ?>
 
-<section class="container">
+<section class="section container">
 
     <?php
         $pathImage = 'src/uploads/';

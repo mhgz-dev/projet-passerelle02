@@ -8,7 +8,7 @@
 
 
 
-<section class="container">
+<section class="section container">
 
     <h1 class="m-4 text-center">Les recettes</h1>
 
@@ -28,8 +28,8 @@
 
       
         
-    <div class="container">
-        <div class="row g-3">
+    <div class="recipeCard container">
+        <div class="row g-3 mb-3">
 
 <?php
     $pathImage = 'src/uploads/';

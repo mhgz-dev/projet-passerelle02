@@ -11,8 +11,8 @@
 </head>
 <body>
 
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark p-3 m-0 rounded-bottom">
+<header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark p-2 m-0 rounded-bottom">
         <div class="container">
             <a class="navbar-brand text-white p-2 logo" href="index.php?page=home">
                 Les Délices des îles 
@@ -59,7 +59,7 @@
 
 <?= $content ?>
 
-    <footer class="rounded-top">
+    <footer class="footer rounded-top">
         © Michaël GOUEZ. Projet Passerelle #2 dans le cadre de la formation Believemy.
     </footer>
 

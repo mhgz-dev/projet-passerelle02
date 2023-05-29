@@ -18,9 +18,42 @@
   font-family: "Montserrat";
   src: url(../fonts/Montserrat.ttf);
 }
-body {
-  margin-bottom: 4em;
-  height: 100vh;
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.header {
+  position: fixed;
+  height: 62px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.footer {
+  position: fixed;
+  height: 30px;
+  padding: 3px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-family: "Special Elite";
+  background: #212529;
+  color: white;
+  text-align: center;
+}
+
+.section {
+  padding: 62px 0 30px 0;
+  font-family: "Mukta";
+  font-size: 0.9rem;
+}
+
+.recipeCard {
+  z-index: 1;
 }
 
 h1 {
@@ -79,27 +112,8 @@ ul {
   list-style-type: circle;
 }
 
-section {
-  font-family: "Mukta";
-  margin-bottom: 4rem;
-  font-size: 0.9rem;
-}
-
 .form {
   margin-top: 8vh;
-}
-
-footer {
-  font-family: "Special Elite";
-  height: 30px;
-  padding: 3px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: #212529;
-  color: white;
-  text-align: center;
 }
 
 @media screen and (min-width: 320px) and (max-width: 700px) {

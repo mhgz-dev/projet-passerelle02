@@ -5,7 +5,7 @@
     ob_start();
 ?>
 
-<section class="container">
+<section class="section container">
 
     <p class=m-5>Une erreur s'est produite. Veuillez suivre ce lien pour revenir à l'<a href="index.php?page=home">accueil</a>.</p>
 

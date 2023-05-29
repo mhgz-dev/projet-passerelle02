@@ -4,10 +4,7 @@
     session_start();
     
     require_once('controller/controller.php');
-    require('model/UserManager.php');
-    require('model/ConnectionManager.php');
-    require('model/RecipeManager.php');
-    require('model/CommentaryManager.php');
+    
 
 
     try {

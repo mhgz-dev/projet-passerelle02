@@ -5,7 +5,7 @@
     ob_start();
 ?>
 
-<section class="container">
+<section class="section container">
 
     <h1 class="m-4 text-center">Créez votre compte pour pouvoir laisser des commentaires</h1>
 

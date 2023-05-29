@@ -4,7 +4,7 @@
 	ob_start();
 ?>
 
-<section class="container">
+<section class="section container">
 
 <h1 class="m-4 text-center">Suppression de la recette</h1>
 

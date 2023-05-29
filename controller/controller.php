@@ -1,6 +1,9 @@
 <?php    
 
-    
+    require('model/UserManager.php');
+    require('model/ConnectionManager.php');
+    require('model/RecipeManager.php');
+    require('model/CommentaryManager.php');
 
     // Fonctions pour l'affichage des pages en fonction des données envoyés dans $_GET
     function home() {

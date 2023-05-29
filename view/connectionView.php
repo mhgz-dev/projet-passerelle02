@@ -7,7 +7,7 @@
 
         
 
-<section class="container">
+<section class="section container">
 
     <h1 class="m-4 text-center">Connectez-vous et postez votre recette.</h1>
 
