@@ -75,9 +75,13 @@
     // Affichage de la page de création de recette + Fonction pour la création de la recette en BDD
     function adminView() {
         
-        if(isset($_POST['title_recipe']) && isset($_POST['preparation_time']) && isset($_POST['ingredients']) && isset($_POST['instructions']) && isset($_FILES['imgRecipe'])) {
+        if(!empty($_POST['title_recipe']) && !empty($_POST['preparation_time']) && !empty($_POST['ingredients']) && !empty($_POST['instructions']) && !empty($_FILES['imgRecipe'])) {
             
             createRecipe(htmlspecialchars($_POST['title_recipe']), htmlspecialchars($_POST['ingredients']), htmlspecialchars($_POST['preparation_time']), htmlspecialchars($_POST['instructions']), $_FILES['imgRecipe']);
+        }
+        else {
+            header('location: index.php?page=admin&error=1&message=Veuillez remplir tous les champs du formulaire.');
+            exit();
         }
         require('view/adminView.php');
     }

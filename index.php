@@ -34,8 +34,6 @@ try {
         // Fonction de modification de recette
         else if($_GET['page'] == 'modify') {
             modifyView();
-
-        
         }
 
         // Connexion des utilisateurs
