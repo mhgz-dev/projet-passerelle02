@@ -14,12 +14,14 @@
             exit();
             
         }
-
+        
         public function getCommentary() {
 
             $bdd = $this->connectionBDD();
-            $reqComment = $bdd->query('SELECT * FROM commentary');
-            
+            $reqComment = $bdd->query('SELECT c.creation_date, content, recipe_id, user_id, pseudo, u.id
+                                        FROM commentary c, users u
+                                        WHERE u.id = c.user_id');
             return $reqComment;
         }
+    
     }

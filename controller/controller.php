@@ -59,6 +59,12 @@
     
     function adminView() {
         require('view/adminView.php');
+        if(!empty($_POST['title_recipe']) && !empty($_POST['preparation_time']) && !empty($_POST['ingredients']) && !empty($_POST['instructions']) && !empty($_FILES['imgRecipe'])) {
+
+            createRecipe(htmlspecialchars($_POST['title_recipe']), htmlspecialchars($_POST['ingredients']), htmlspecialchars($_POST['preparation_time']), htmlspecialchars($_POST['instructions']), $_FILES['imgRecipe']);
+            
+            
+        }
     }
 
 

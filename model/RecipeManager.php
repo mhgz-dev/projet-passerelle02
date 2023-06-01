@@ -12,8 +12,9 @@ class RecipeManager extends Manager {
         $requeteRecipe = $bdd->prepare('INSERT INTO recipes(title_recipe, ingredients, preparation_time, instructions, image) VALUES(?, ?, ?, ?, ?)');
         $result = $requeteRecipe->execute([$title_recipe, $ingredients, $preparation_time, $instructions, $imageName]);
 
-        header('location: index.php?page=admin&success=1');
+        header('location:index.php?page=admin&success=1&message=Recette ajoutée avec succès.');
         exit();
+        
     }
     
     // Affichage d'une recette
@@ -57,6 +58,8 @@ class RecipeManager extends Manager {
         $bdd = $this->connectionBDD();
         $requeteRecipe = $bdd->prepare('DELETE FROM recipes WHERE id = ?');
         $deleting = $requeteRecipe->execute([htmlspecialchars($_SESSION['id_recipe'])]);
+        $image = $deleting['image'];
+        unlink('./src/uploads/'.$image.'');
        
         header('location: index.php?page=recipes&success=1&message=Recette supprimée avec succès.');
         exit();

@@ -10,15 +10,14 @@
 
 <div class="d-flex justify-content-center">
 
-
 	<form action="index.php?page=admin" method="post" enctype="multipart/form-data" class="form">
 
-<?php if(isset($_GET['success'])) {
-	echo '<p class="alert alert-success">La recette est bien enregistrée.</p>';
-}
-else if(isset($_GET['error']) && !empty($_GET['message'])) {
-	echo '<p class="alert alert-warning">'.htmlspecialchars($_GET['message']).'</p>';
-} ?>
+	<?php if(isset($_GET['success'])) {
+		echo '<p class="alert alert-success">'.htmlspecialchars($_GET['message']).'</p>';
+	}
+	else if(isset($_GET['error']) && !empty($_GET['message'])) {
+		echo '<p class="alert alert-warning">'.htmlspecialchars($_GET['message']).'</p>';
+	} ?>
 
 	<div class="form-floating mb-3">
 		<input type="text" class="form-control" id="title_recipe" name="title_recipe">
@@ -49,7 +48,7 @@ else if(isset($_GET['error']) && !empty($_GET['message'])) {
 	</div>
 	
 	<div>
-		<button class="btn btn-outline-success mt-3" type="submit">Poster la recette</button>
+		<button class="btn btn-outline-success btn-sm mt-3" type="submit">Poster la recette</button>
 	</div>
 	
 	</form>

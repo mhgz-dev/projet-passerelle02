@@ -42,7 +42,7 @@
         </div>
 
         <div>
-            <input type="submit" value="Je m'inscris.">
+            <button class="btn btn-outline-success btn-sm" type="submit">Je m'inscris.</button>
         </div>
 
     

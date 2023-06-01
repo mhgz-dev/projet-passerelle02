@@ -14,7 +14,7 @@
 	<form action="index.php?page=modify&id=<?= htmlspecialchars($_GET['id']) ?>" method="post" enctype="multipart/form-data" class="form">
 
 <?php if(isset($_GET['success'])) {
-	echo '<p class="alert alert-success">La recette est bien enregistrée.</p>';
+	echo '<p class="alert alert-success">'.htmlspecialchars($_GET['message']).'</p>';
 }
 else if(isset($_GET['error']) && !empty($_GET['message'])) {
 	echo '<p class="alert alert-warning">'.htmlspecialchars($_GET['message']).'</p>';

@@ -47,24 +47,24 @@
         
                 
                 
-                        <ul class="justify-content-center">
-                            <li><u>Visuelle / Graphique</u></li>
-                                <ul>
-                                    <li>HTML 5</li>
-                                    <li>CSS 3</li>
-                                    <li>SASS</li>
-                                    <li>Bootstrap 5</li>
-                                </ul><br>
-                            <li><u>Langage Serveur</u></li>
-                                <ul>
-                                    <li>PHP</li>
-                                </ul><br>
-                            <li><u>Base de données</u></li>
-                                <ul>
-                                    <li>SQL</li>
-                                    <li>PhpMyAdmin</li>
-                                </ul><br>
-                        </ul>
+                <ul class="justify-content-center">
+                    <li><u>Visuelle / Graphique</u></li>
+                        <ul>
+                            <li>HTML 5</li>
+                            <li>CSS 3</li>
+                            <li>SASS</li>
+                            <li>Bootstrap 5</li>
+                        </ul><br>
+                    <li><u>Langage Serveur</u></li>
+                        <ul>
+                            <li>PHP</li>
+                        </ul><br>
+                    <li><u>Base de données</u></li>
+                        <ul>
+                            <li>SQL</li>
+                            <li>PhpMyAdmin</li>
+                        </ul><br>
+                </ul>
             
                 
                 <div class="container">

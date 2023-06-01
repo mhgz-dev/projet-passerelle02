@@ -21,7 +21,7 @@
     } ?>
     <div class="text-center p-2">
 
-        <img class="rounded w-25" src="<?= $pathImage.$oneDish['image'] ?>" alt="Plat">
+        <img class="rounded w-50" src="<?= $pathImage.$oneDish['image'] ?>" alt="Plat">
 
     <div class="mt-2">   
 
@@ -37,14 +37,14 @@
     </div>
     <?php if(isset($_SESSION['connect'])) { ?>
         
-        <div class="">    
+        <div class="commentary">    
             <form action="index.php?page=dish&id=<?=$oneDish['id']?>" method="post">
                 <div class="form-floating input-group mt-3">
                     <textarea rows="3" class="form-control" id="commentary" name="commentary"></textarea>
                     <label for="commentary" class="form-label">Votre commentaire</label>
                 </div>
                 <div>
-                    <input class="mt-3" type="submit" value="Poster le commentaire">
+                    <button class="mt-3 mb-5 btn btn-outline-info btn-sm" type="submit">Poster le commentaire</button>
                 </div>
             </form>
         </div>
@@ -70,7 +70,7 @@ while($commentary = $reqComment->fetch()) {
 
     if($commentary['recipe_id'] == $_GET['id']) {
 ?>
-<p>Commentaire postée le <b><?= $commentary['creation_date'] ?></b> par <b><?= $commentary['user_id'] ?></b></p>
+<p>Commentaire postée le <b><?= $commentary['creation_date'] ?></b> par <b><?= $commentary['pseudo'] ?></b></p>
 
 <p><b><?= $commentary['content'] ?></b></p>
 

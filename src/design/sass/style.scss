@@ -1,12 +1,9 @@
+@import 'variables';
+
 @font-face {
     font-family: bachelorette;
     src: url(../fonts/Bachelorette_PERSONAL_USE_ONLY.otf);
     
-}
-
-@font-face {
-    font-family: 'Special Elite';
-    src: url(../fonts/SpecialElite-Regular.ttf)
 }
 
 @font-face {
@@ -19,14 +16,18 @@
     src: url(../fonts/Alkatra.ttf);
 }
 
-@font-face {
-    font-family: 'Montserrat';
-    src: url(../fonts/Montserrat.ttf);
-}
-
 html, body {
     padding: 0;
     margin: 0;
+    height: 100%;
+    background-image: url('../assets/images/tortle.png');
+    background-size: 100%;
+    background-color: $fourthColor;
+    color: $secondColor;
+}
+
+#background {
+    width: 100%;
     height: 100%;
 }
 
@@ -37,6 +38,21 @@ html, body {
     left: 0;
     right: 0;
     z-index: 2;
+    font-family: 'Alkatra';
+    
+
+    .navbar {
+        background-color: $firstColor;
+        
+
+            a {
+                color: $thirdColor;
+            }
+            button {
+                background-color: $thirdColor;
+            }
+            
+    }
 
 }
 
@@ -47,9 +63,9 @@ html, body {
     bottom: 0;
     left: 0;
     right: 0;
-    font-family: 'Special Elite';
-    background: #212529;
-    color: white;
+    font-family: 'Alkatra';
+    background-color: $firstColor;
+    color: $thirdColor;
     text-align: center;
 }
 
@@ -59,89 +75,64 @@ html, body {
     font-size: .9rem;
 }
 
+.commentary {
+    width: 40%;
+}
 
 
-// body {
-    
-//     height: 100vh;
-// }
-
-// section {
-//     font-family: 'Mukta';
-//     margin-bottom: 3rem;
-//     font-size: .9rem;
-    
-// }
-
-// footer {
-//     font-family: 'Special Elite';
-//     height: 30px;
-//     padding: 3px;
-//     // margin-top: 5em;
-//     position: fixed;
-//     bottom: 0;
-//     left: 0;
-//     width: 100%;
-//     background: #212529;
-//     color: white;
-//     text-align: center;
-// }
 
 .recipeCard {
     z-index: 1;
 }
 
-
-// body {
-//     background-image: url(../../assets/images/Image1.jpg);
-// }
+p {
+    color: black;
+}
 
 h1{
     font-family: 'bachelorette';
+    color: $firstColor;
 
 }
 
 h2 {
     font-family: 'Mukta';
-}
-
-.panel {
     
-    height: 65vh;
-    overflow: auto;
-    margin-top: 12vh;
 }
 
-.imageCard {
-    width: 100%;
-    height: 10rem;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
 
+.card {
+
+    border: 2px solid $secondColor;
+
+    .imageCard {
+        width: 100%;
+        height: 10rem;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+
+    }
+
+    .card-body {
+        height: 4rem;
+        max-height: 100%;
+        overflow: hidden;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        background-color: $fourthColor;
+
+        p {
+
+        margin: 7px 0 0 0;
+        
+    }
 }
-
-.card-body {
-    height: 4rem;
-    max-height: 100%;
-    overflow: hidden;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-}
-
-.card-body > p {
-
-    margin: 8px 0 0 0;
-    
 }
 
 
 a:hover {
-    font-weight: 900;
-}
-
-.logo {
-    font-family: 'Special Elite';
+    font-weight: 1000;
 }
 
 .stacks {
@@ -155,13 +146,16 @@ a:hover {
 }
 
 ul {
+
     list-style-type: circle;
+    color: black;
+
 }
 
 
 
 .form {
-    margin-top: 8vh;
+    margin-top: 12vh;
 }
 
 // .largeurCarte {
@@ -177,5 +171,5 @@ ul {
 
         min-width: 100%;
 
-}
+    }
 }

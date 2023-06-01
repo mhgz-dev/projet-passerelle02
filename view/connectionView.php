@@ -31,7 +31,7 @@
             </div>
 
             <div>
-                <input type="submit" value="Je me connecte">
+                <button class="btn btn-outline-success btn-sm" type="submit">Je me connecte</button>
             </div>
 
             <label id="connect"><input class="mt-3" type="checkbox" name="autoLogon" checked />Se souvenir de moi</label>

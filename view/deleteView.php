@@ -25,7 +25,6 @@ Cette action est irreversible !!!
 <input name="confirmDelete" id="confirmDelete" type="submit" value="Je confirme la suppression">
 </form>
 
-
 </section>
 <?php
 
