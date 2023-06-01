@@ -38,7 +38,6 @@
             return $this->_secret;
         }
 
-
         // SETTERS
         public function setEmail($email) {
             $this->_email = $email;
@@ -55,9 +54,7 @@
             $this->_secret = $secret;
         }
 
-
         // METHODES
-
         // Enregistrement de l'utilisateur
         public function saveUser($email, $pseudo, $password, $confirmPassword) {
 
@@ -85,16 +82,12 @@
             // Vérification de la concordance des 2 mdp.
             if($password === $confirmPassword) {
 
-                require_once('Manager.php');
 
                 // Chiffrement du mot de passe
                 $this->setPassword(Verification::encryptPassword($password));
                 $this->setSecret(Verification::createSecret($email));
 
-                // // Secret
-                // $secret = sha1($email).time();
-                // $secret = sha1($secret).time();
-
+                // Connexion à la BDD pour enregistrer l'utilisateur.
                 $bdd = $this->connectionBDD();
                 $requete = $bdd->prepare('INSERT INTO users(email, pseudo, password, secret) VALUES(?, ?, ?, ?)');
                 $requete->execute([
@@ -126,5 +119,4 @@
             $_SESSION['id_recipe'];
  
         }
-
     }

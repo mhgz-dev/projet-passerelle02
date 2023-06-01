@@ -77,7 +77,6 @@
         public static function encryptPassword($password) {
 
             return 'aq1'.sha1($password.'zqsd').'1208';
-
         }
 
         // Création du secret
@@ -88,6 +87,7 @@
             return $secret;
         }
 
+        // Vérification de l'image et du format
         public static function verifImageRecipe($imgRecipe) {
 
             if($_FILES['imgRecipe']['size'] <= 2000000) {
@@ -105,5 +105,4 @@
 
             return $newImageName;
         }
-
     }

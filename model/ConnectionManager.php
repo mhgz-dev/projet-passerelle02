@@ -7,11 +7,12 @@
     // Objet pour la connexion de l'utilisateur
     class ConnectionUser extends Manager {
 
+        // Fonction pour la connexion de l'utilisateur
         public function connectUser($email, $password) {
 
-
             // Vérification de l'existence de l'email
-            if(Verification::existingEmail($email)) {    
+            if(Verification::existingEmail($email)) {
+
                 header('location: index.php?page=connection&error=1&message=Adresse email inexistante.');
                 exit();
             }
@@ -49,7 +50,6 @@
 
                     header('location: index.php?page=home&success=1&message=Vous êtes maintenant connecté.');
                     exit();
-
                 }
                 else {
 
@@ -57,11 +57,9 @@
                     exit();
                 }
             }
-
-
         }
 
-
+        // Création du cookie pour la connexion automatique
         public function autoConnection() {
 
             if(isset($_COOKIE['userLogin']) && !isset($_SESSION['connect'])) {
@@ -94,8 +92,6 @@
                         }
                     }
                 }
-
-
             }
         }
     }
