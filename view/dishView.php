@@ -36,7 +36,9 @@
                     <p><b>Temps de préparation :</b> <?= $oneDish['preparation_time'] ?> minutes.</p>
                     <p><b>Ingrédients :</b> <?= $oneDish['ingredients'] ?></p>
                     <p><b>Voici comment réaliser ce plat :</b> <br> <?= $oneDish['instructions'] ?></p>
-                </div> 
+                </div>
+
+                <h2>Bon appétit</h2>
             
             </div>
 

@@ -47,6 +47,12 @@ html, body {
 
 }
 
+.section {
+    padding: 62px 0 30px 0;
+    font-family: 'Mukta';
+    font-size: .9rem;
+}
+
 .footer {
     position: fixed;
     height: 30px;
@@ -60,12 +66,6 @@ html, body {
     text-align: center;
 }
 
-.section {
-    padding: 62px 0 30px 0;
-    font-family: 'Mukta';
-    font-size: .9rem;
-}
-
 .commentary {
     width: 40%;
 }
@@ -74,17 +74,28 @@ html, body {
     z-index: 1;
 }
 
-h1{
+h1, h2 {
     font-family: 'bachelorette';
     color: $firstColor;
 }
 
-h2 {
-    font-family: 'Mukta'; 
+
+
+a:hover {
+    font-weight: 1000;
 }
 
 p {
     color: black;
+}
+
+ul {
+    list-style-type: circle;
+    color: black;
+}
+
+label {
+    color: $firstColor;
 }
 
 .card {
@@ -112,22 +123,9 @@ p {
     }
 }
 
-a:hover {
-    font-weight: 1000;
-}
-
 .stacks {
     width: 50px;
     height: 50px;
-}
-
-ul {
-    list-style-type: circle;
-    color: black;
-}
-
-label {
-    color: $firstColor;
 }
 
 .form {

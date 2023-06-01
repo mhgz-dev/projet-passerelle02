@@ -79,10 +79,6 @@
             
             createRecipe(htmlspecialchars($_POST['title_recipe']), htmlspecialchars($_POST['ingredients']), htmlspecialchars($_POST['preparation_time']), htmlspecialchars($_POST['instructions']), $_FILES['imgRecipe']);
         }
-        else {
-            header('location: index.php?page=admin&error=1&message=Veuillez remplir tous les champs du formulaire.');
-            exit();
-        }
         require('view/adminView.php');
     }
 
