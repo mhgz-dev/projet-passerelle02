@@ -1,4 +1,4 @@
-Site de recette pour le projet passerelle numéro 2 dans le cadre de la formation BELIEVEMY.COM
+Site de recettes pour le projet passerelle numéro 2 dans le cadre de la formation BELIEVEMY.COM
 ==============================================================================================
 
 Ce projet est un site de recettes que j'ai réalisé lors de mon voyage à l'île de la Réunion.
